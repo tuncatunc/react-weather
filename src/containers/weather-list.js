@@ -16,7 +16,7 @@ class WeatherList extends Component {
       <tr key={name} valign="bottom">
         <td><WeatherMap lat={lat} lon={lon}/></td>
         <td>
-          <WeatherChart color={'green'} data={temps} units={'K'}/>
+          <WeatherChart color={'green'} data={temps} units={'Celcius'}/>
         </td>
         <td>
           <WeatherChart color={'blue'} data={pressures} units={'hPa'}/>
@@ -38,7 +38,7 @@ class WeatherList extends Component {
                 City
               </th>
               <th>
-                Temperature (K)
+                Temperature (&deg;C)
               </th>
               <th>
                 Pressure (hPa)
